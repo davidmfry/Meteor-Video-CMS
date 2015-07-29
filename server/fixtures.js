@@ -7,7 +7,8 @@ if (ClientProjects.find().count() === 0)
         email: 'david.fry.tv@gmail.com',
         phoneNumber: '123-456-7896',
         message: "",
-        dateAdded: new Date()
+        dateAdded: new Date(),
+        isDone: false
     });
 
     ClientProjects.insert({
@@ -16,7 +17,8 @@ if (ClientProjects.find().count() === 0)
         email: 'Jsmieth@none.com',
         phoneNumber: '555-555-5555',
         message: "Please make sure my spot is ready to go by today! OR Else...",
-        dateAdded: new Date()
+        dateAdded: new Date(),
+        isDone: false
     });
 
     ClientProjects.insert({
@@ -25,7 +27,8 @@ if (ClientProjects.find().count() === 0)
         email: 's.sang@sangalot.com',
         phoneNumber: '456-456-1234',
         message: "One small message",
-        dateAdded: new Date()
+        dateAdded: new Date(),
+        isDone: false
     });
 
     console.log("Finished adding data.")

@@ -1,11 +1,7 @@
 <!--Main page Layout, this is all the boiler plate and the >yield is what allows the dynamic templets to be render-->
 <template name="layout">
     <div class="container">
-        <header class="navbar navbar-default" role="navigation">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="{{pathFor 'clientForm'}}">{{pageTitle}}</a>
-            </div>
-        </header>
+        {{> header}}
 
         <div id="main">
             {{> yield }}
