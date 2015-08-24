@@ -9,3 +9,9 @@ twbs:bootstrap
 iron:router
 ian:accounts-ui-bootstrap-3
 accounts-password
+raix:ui-dropped-event
+sacha:spin
+chrismbeckett:toastr
+cfs:standard-packages
+cfs:gridfs
+cfs:filesystem

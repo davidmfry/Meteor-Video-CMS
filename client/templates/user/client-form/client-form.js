@@ -14,11 +14,13 @@ Template.clientForm.events({
         Meteor.call('projectInsert', projectPost, function (error, result) {
             // display the error to the user and abort
             if (error) {
+                //TODO: add a toast and take the alert away
+                //clear the form if there is an error
+                tmpl.find("form").reset();
                 return alert(error.reason);
             }
             Router.go('uploadFiles', {_id: result._id});
         });
-        //clear the form after the submit
-        //tmpl.find("form").reset();
+
     }
 });
